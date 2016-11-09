@@ -1,5 +1,5 @@
 .axis .tick line{
-    stroke:white;
+    stroke:#eeeeee;
 }
 .axis .domain{
     display:none;
@@ -7,7 +7,8 @@
 .country rect{
         fill-opacity:.8;
 }
+
 .btn{
-  background-color: #BBBBBB;
-  stroke:white;
+  background-color: #0011cc;
+  border-color: white;
 }

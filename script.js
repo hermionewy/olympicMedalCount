@@ -14,9 +14,7 @@ var plot = d3.select('.canvas')
     .append('g')
     .attr('transform','translate(' + m.l + ',' + m.t + ')');
 
-var colors = d3.scaleLinear()
-    .domain([0,4])
-    .range(['#FF0000','#FF8832']);
+var colors = d3.scaleOrdinal().range(d3.schemeCategory10);
 
 var scaleX, scaleY;
 
@@ -107,6 +105,8 @@ function draw(rows){
     nodesTransition.select('rect')
         .attr('height',function(d){return h-scaleY(d.count);})
         .style('fill',function(d,i){return colors(i)});
+
+    // tooltip
 
 
 }
